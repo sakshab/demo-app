@@ -1,15 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CarHomeComponent } from './components/car-home/car-home.component';
 
+import { SharedModule } from '../shared/shared.module';
+
+import { CarHomeComponent } from './components/car-home/car-home.component';
+import { CarListComponent } from './components/car-list/car-list.component';
 
 
 @NgModule({
   declarations: [
-    CarHomeComponent
+    CarHomeComponent,
+    CarListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [CarHomeComponent,] 
 })
